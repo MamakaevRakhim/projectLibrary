@@ -1,0 +1,31 @@
+<div class="singlebooks">
+  <div class="photo"><img src="{{get.img}}"></div>
+  <div>
+    <h2 class="Head">
+      {{get.name}}
+    </h2>
+    <p class="descript">{{get.description}}</p>
+  </div>
+</div>
+<div class="rent">
+  {{#if get.rented}}
+    <span>
+      книга занята
+    </span>
+  {{else}}
+    <a href="/rentBook/{{get._id}}/users" style="display: block">Арендовать</a>
+  {{/if}}
+</div>
+
+<h3 class="reviewsH">Отзывы:</h3>
+<div class="reviews">
+<!--  {{#each comments}}-->
+<!--    <div style="display: flex">-->
+<!--      <img src="{{img}}" class="avatarka">-->
+<!--      <div>-->
+<!--        <div class="author">{{author}}</div>-->
+<!--        <div class="comment">{{comment}}</div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  {{/each}}-->
+</div>

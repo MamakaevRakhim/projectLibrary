@@ -1,0 +1,28 @@
+
+
+  <ul style="margin-top: 60px">
+    <div>
+    <div class="name"> <p style="color: gray">имя: </p> <h3 style="color: black; font-family: 'Comfortaa', cursive;">
+      {{get.rentName}}
+    </h3></div>
+    <img src="{{get.img}}" class="avatar">
+    </div>
+
+    {{#each get.rentedBooks}}
+    <li class="single-user">
+      <div class="photo"><img src="{{img}}">
+      </div>
+      <h3 style="width: 200px">{{this.name}}</h3>
+    </li>
+    {{/each}}
+  </ul>
+
+  <div  class="status">
+  <p style="color: gray">статус: </p><h4> {{get.isBlocked}}</h4>
+  </div>
+
+  {{#if get.isBlocked}}
+    <a href="/users/{{get._id}}/unBlocked" class="links">Разблокировать</a>
+  {{else}}
+    <a href="/users/{{get._id}}/blocked" class="links">Заблокировать</a>
+  {{/if}}

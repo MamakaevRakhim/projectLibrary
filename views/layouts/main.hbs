@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .header{
+      width: 100%;
+      background-color: #65837b;
+      display: block;
+
+    }
+    .shapka{
+      display: flex;
+      padding-left: 25%;
+      padding-right: 25%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      text-align: center;
+      align-items: center;
+    }
+    .head{
+      text-align: center;
+      margin-top: 0;
+      color:white;
+      font-family: 'Lobster', cursive;
+      font-size: 150%;
+      margin-left: 23%;
+      padding-top: 10px;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+    }
+    .link{
+      color: cornflowerblue;
+    }
+    .link:active{
+      color: black;
+    }
+    .link:hover{
+      color: darkblue;
+      transition: 0.6s;
+    }
+    .nav{
+      justify-content: space-between;
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 10px;
+    }
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 10px 5px 5px black;
+    }
+    .photo{
+      width: 150px;
+      height: 210px;
+    }
+   ul{
+     list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+     margin-left: 20px;
+    }
+    .booksPunkt{
+      margin-left: 20px;
+      width: 150px;
+    }
+    h3{
+      color: darkblue;
+    }
+    .booksLi{
+      width: 150px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      height: 300px;
+      justify-content: space-between;
+      margin-right: 130px;
+      flex-wrap: wrap;
+    }
+    img:hover{
+      transition: 0.2s;
+      transform: translateY(-6px);
+    }
+    .bar:hover{
+      color: lightgreen;
+      transition: 0.2s;
+    }
+    .bar:active{
+      color: darkslategray;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown:hover .dropdown-content {display: block;}
+    .genre:hover{
+      background-color: lightgreen;
+      transition: 0.2s;
+    }
+    button{
+      list-style-type: none;
+      border: none;
+      font-family: 'Comfortaa', cursive;
+      background-color: transparent;
+      color: white;
+      height: 18.13px;
+      font-size: 16px;
+    }
+    .singlebooks{
+      margin: 30px;
+      display: flex;
+    }
+    .descript{
+      width: 1000px;
+      margin-left: 60px;
+      font-size: 20px;
+    }
+    .Head{
+      margin-left: 60px;
+    }
+    .reviewsH{
+      margin-top: 80px;
+      margin-left: 30px;
+      color: black;
+    }
+    .rent{
+      display: block;
+      color: white;
+      background-color: #65837b;
+      width: 130px;
+      height: 30px;
+      margin-left: 30px;
+      text-align: center;
+      border-radius: 20px;
+      line-height: 30px;
+    }
+    .rent:active{
+      background-color: darkslategrey;
+    }
+    .Header{
+      display: block;
+      text-align: center;
+      margin-top: 0;
+      color:white;
+      font-family: 'Lobster', cursive;
+    }
+    .users{
+      margin-left: 60px;
+      margin-top: 30px;
+      height: 25px;
+      line-height: 25px;
+    }
+    .linkRent{
+      color: black;
+      display: block;
+      height: 25px;
+      margin-left: 5px;
+    }
+    .users:hover{
+      background-color: #65837b;
+      color: white;
+      border-radius: 10px;
+    }
+    .linkRent:hover{
+      background-color: #65837b;
+      color: white;
+      border-radius: 10px;
+    }
+    .linkRent:active{
+      transform: translateY(1px);
+    }
+    .users:active{
+      transform: translateY(1px);
+    }
+    .single-user{
+      margin-left:150px;
+    }
+    .avatar{
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: none;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .avatar:hover{
+      transform: none;
+    }
+    .name{
+      display: flex;
+      align-items: center;
+    }
+    .status{
+      margin-left: 60px;
+      display: flex;
+      align-items: center;
+    }
+    .links{
+      color: cornflowerblue;
+      margin-left: 60px;
+    }
+    .links:active{
+      color: black;
+    }
+    .links:hover{
+      color: darkblue;
+      transition: 0.6s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="shapka">
+      <h3 class="head"><a href="/user/books" class="Header">Книга – устройство, способное разжечь воображение. ...</a></h3>
+  </div>
+  <ul class="nav">
+
+    <li><a href="/main" class="bar">Топ-3</a></li>
+    <li><a href="/user/books" class="bar">Все книги</a></li>
+
+    <li class="dropdown">
+      <button class="bar">Книги по жанрам</button>
+      <div class="dropdown-content">
+      <a href="/books/genre/610bc413a9ca4e33a882fbb5" class="genre">Бизнес</a>
+      <a href="/books/genre/610bc45cea9a9e3574e86574" class="genre">Художественная</a>
+      <a href="/books/genre/610bc493ea9a9e3574e86576" class="genre">Психология</a>
+</div>
+</li>
+    <li><a href="/users" class="bar">Пользователи</a></li>
+
+  </ul>
+</div>
+
+{{{body}}}
+
+<div class="footer">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<div class="body">
+  <ul>
+
+      {{#each get}}
+      <li class="booksLi">
+        <a href="/user/books/{{_id}}" class="adress">
+
+          <div class="photo"><img src="{{img}}">
+          </div>
+            <h3>
+              <a href="/user/books/{{_id}}" class="link">{{name}}</a>
+            </h3>
+        </a>
+      </li>
+      {{/each}}
+
+  </ul>
+
+
+
+</div>
